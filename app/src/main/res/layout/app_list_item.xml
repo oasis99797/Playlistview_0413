@@ -22,6 +22,7 @@
             android:layout_marginLeft="10dp">
 
             <TextView
+                android:id="@+id/titleTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
@@ -29,6 +30,7 @@
                 android:textColor="#383838" />
 
             <TextView
+                android:id="@+id/companyNameTxt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
@@ -43,26 +45,31 @@
                 android:layout_marginTop="3dp">
 
                 <ImageView
+                    android:id="@+id/starImg1"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:src="@drawable/empty_star" />
 
                 <ImageView
+                    android:id="@+id/starImg2"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:src="@drawable/empty_star" />
 
                 <ImageView
+                    android:id="@+id/starImg3"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:src="@drawable/empty_star" />
 
                 <ImageView
+                    android:id="@+id/starImg4"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:src="@drawable/empty_star" />
 
                 <ImageView
+                    android:id="@+id/starImg5"
                     android:layout_width="15dp"
                     android:layout_height="15dp"
                     android:src="@drawable/empty_star" />
