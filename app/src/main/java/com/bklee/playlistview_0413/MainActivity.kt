@@ -30,19 +30,15 @@ class MainActivity : AppCompatActivity() {
 
             alert.setTitle("삭제 확인")
             alert.setMessage("정말 이 앱을 삭제하시겠습니까?")
-            alert.setPositiveButton("확인", object : DialogInterface.OnClickListener {
-                override fun onClick(dialog: DialogInterface?, which: Int) {
+            alert.setPositiveButton("확인", { dialog, which ->
+                Log.d("앱목록갯수-삭제전", apps.size.toString())
+                apps.removeAt(position)
+                Log.d("앱목록갯수-삭제후", apps.size.toString())
 
-                    Log.d("앱목록갯수-삭제전", apps.size.toString())
-                    apps.removeAt(position)
-                    Log.d("앱목록갯수-삭제후", apps.size.toString())
-
-                    mAppAdapter?.notifyDataSetChanged()
-
-                }
-
+                mAppAdapter?.notifyDataSetChanged()
             })
             alert.setNegativeButton("취소", null)
+            alert.setNeutralButton("모름", null)
 
             alert.show()
 
